@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/users")
+@RequestMapping("/api/users1")
 public class UserRestController {
     private final UserRepository userRepository;
 
@@ -42,7 +42,7 @@ public class UserRestController {
         UserEntity existUser = getExistUser(id);
         return existUser;
     }
-    //Email로 조회하고, 수정
+    //Email로 조회하고, 수정하기
     @PatchMapping("/{email}/")
     public UserEntity updateUser(@PathVariable String email, @RequestBody UserEntity userDetail){
         UserEntity existUser = userRepository.findByEmail(email) //Optional<UserEntity>
