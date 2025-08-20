@@ -34,7 +34,7 @@
         <a href="javascript:history.back()" class="btn">이전 페이지</a>
     </div>
 
-    <!-- 선택적 정보 표시 -->
+    <!-- DefaultExceptionAdvice에서 path 넣을 경우 표시 -->
     <div th:if="${path}" style="margin-top: 30px; color: #666;">
         <p th:text="'요청 경로: ' + ${path}"></p>
     </div>

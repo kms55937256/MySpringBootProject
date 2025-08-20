@@ -34,9 +34,10 @@
         <a href="javascript:history.back()" class="btn">이전 페이지</a>
     </div>
 
-    <!-- 간단한 오류 정보 (선택사항) -->
+    <!-- DefaultExceptionAdvice에서 error 넣어줄 때 표시 -->
     <div th:if="${error}" style="margin-top: 30px; color: #666;">
-        <p th:text="'오류: ' + ${error.message}"></p>
+        <p th:text="'오류 메시지: ' + ${error.message}"></p>
+        <p th:text="'예외 클래스: ' + ${#strings.substringAfter(error.class.name, 'exception.')}" />
     </div>
 </div>
 </body>
