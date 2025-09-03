@@ -29,8 +29,6 @@ public enum ErrorCode {
     DEPARTMENT_HAS_STUDENTS("Cannot delete department with id: %s. It has %s students",
             HttpStatus.CONFLICT);
 
-
-
     private final String messageTemplate;
     private final HttpStatus httpStatus;
 
