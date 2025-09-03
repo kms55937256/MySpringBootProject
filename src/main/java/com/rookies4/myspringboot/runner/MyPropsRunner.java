@@ -1,7 +1,7 @@
 package com.rookies4.myspringboot.runner;
 
 import com.rookies4.myspringboot.config.vo.CustomVO;
-import com.rookies4.myspringboot.property.MybootProperties;
+import com.rookies4.myspringboot.property.MyBootProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class MyPropsRunner implements ApplicationRunner {
     private Environment environment;
 
     @Autowired
-    private MybootProperties properties;
+    private MyBootProperties properties;
 
     @Autowired
     private CustomVO custom;
