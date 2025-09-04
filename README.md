@@ -1,4 +1,4 @@
-### [수업중 2-5] Spring Boot와 JPA(Java Persistence API) 활용
+### [수업중 2-7] Spring Boot와 JPA(Java Persistence API) 활용
 
 * Student 와 StudentDetail 1:1 (OneToOne) 엔티티 연관관계
     * Student 와 Department 1:N (OneToMany) 엔티티 연관관계
